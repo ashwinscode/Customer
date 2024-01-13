@@ -2,6 +2,7 @@
 
 namespace Customer.API.Controllers
 {
+    [ApiController]
     [Route("customer")]
     public class CustomerController : Controller
     {
@@ -11,27 +12,27 @@ namespace Customer.API.Controllers
         }
 
         [HttpGet]
-        public string Get(string id)
+        public string CustomerGet()
         {
             return "Name - Get";
         }
 
-        [HttpPost]
-        public string Post(string id)
-        {
-            return "Name - Post";
-        }
+        //[HttpPost]
+        //public string Post(string id)
+        //{
+        //    return "Name - Post";
+        //}
 
-        [HttpPut]
-        public string Update(string id)
-        {
-            return "Name - Update";
-        }
+        //[HttpPut]
+        //public string Update(string id)
+        //{
+        //    return "Name - Update";
+        //}
 
-        [HttpDelete]
-        public string Delete(string id)
-        {
-            return "Name - Delete";
-        }
+        //[HttpDelete]
+        //public string Delete(string id)
+        //{
+        //    return "Name - Delete";
+        //}
     }
 }
